@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    color: blanchedalmond;
+    background-color: darkslategrey;
+}
+
+.page-container {
+    display: flex;
+    width: 1200px;
+    flex-direction: row;
+    background-color: blanchedalmond;
+    color: darkslategrey;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+.menu-bar {
+    width:30%;
+    padding: 10px;
+    background-color: lightskyblue;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: darkslategrey;
+}
+
+.selected {
+    background-color: lightsalmon;
+}
+
+.main-content {
+    padding: 10px;
+    width:70%;
+    text-align: center;
+}
+
+.item-container {
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.item {
+    width: 225px;
+    height: 335px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+}
+
+.description {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+}
