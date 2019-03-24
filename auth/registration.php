@@ -15,21 +15,16 @@
         <a href="?page=authorization">Войти</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="?action=logout">Выйти</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="?page=check_access">Проверка</a>
-    </div>
-    <div class="page-container">
-        <div class="menu-bar">
-            <h4>Категории товаров</h4>
-            <hr />
-            <ul>
-                <?php
-                    include 'menu.php';
-                ?>
-                
-            </ul>
-        </div>
-        <div class="main-content">
-            <h4>Выберите категорию</h4>
-        </div>
+
+        <br>
+        <form method="POST" action="?action=reg">
+            <input name="login" /><br/>
+            <input type="password" name="password" /><br/>
+            <input type="password" name="password_confirm" /><br/>
+            <input type="submit" value="Зарегестрировать" />
+        </form>
+        
     </div>
 </body>
 </html>
+

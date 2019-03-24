@@ -9,6 +9,11 @@ body {
     background-color: darkslategrey;
 }
 
+#login, #login-bar>a:link, #login-bar>a:visited {
+    color: blanchedalmond;
+    font-weight: bold;
+}
+
 .page-container {
     display: flex;
     width: 1200px;
@@ -37,7 +42,7 @@ a {
     text-decoration: none;
 }
 
-a:link, a:visited {
+.page-container a:link, a:visited {
     color: darkslategrey;
 }
 

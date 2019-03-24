@@ -16,14 +16,7 @@
             <hr />
             <ul>
                 <?php
-                    foreach ($data_main as $key => $item){
-                        if ($key === $page) {
-                            echo '<li class="selected"><a href="?page=' . ($key) . '">' . $item['name'] . '</a></li>';
-                        } else {
-                            echo '<li><a href="?page=' . ($key) . '">' . $item['name'] . '</a></li>';
-                        }
-                    }
-
+                    include 'menu.php';
                 ?>
             </ul>
         </div>
@@ -32,7 +25,7 @@
                 <?php
                     if ($data_page !== ''){                
                         foreach ($data_page as $item){
-                            echo '<a href="?page=' . ($item['en']) . '&id=' . ($item['id']) . '"><div class="item"><h4>' .
+                            echo '<a href="?page=' . ($page) . '&id=' . ($item['id']) . '"><div class="item"><h4>' .
                             ($item['name']) . '</h4><p>Код: ' . 
                             ($item['id']) . '</p><p>Цена: ' .
                             ($item['price']) . ' руб.</p></div></a>';

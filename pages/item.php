@@ -16,14 +16,7 @@
             <hr />
             <ul>
                 <?php
-                    foreach ($data_main as $key => $item){
-                        if ($key === $page) {
-                            echo '<li class="selected"><a href="?page=' . ($key) . '">' . $item['name'] . '</a></li>';
-                        } else {
-                            echo '<li><a href="?page=' . ($key) . '">' . $item['name'] . '</a></li>';
-                        }
-                    }
-
+                    include 'menu.php';
                 ?>
             </ul>
         </div>
